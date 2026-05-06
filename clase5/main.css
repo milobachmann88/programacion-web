@@ -3,27 +3,141 @@
 
 tipos de selectores:
 selector de etiqueta*/
-h1{
-    color:#d1068d;
-   /* background-color: #ff96c2;*/
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
+
+input,
+select,
+textarea,
+button {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+header {
+  color: #d1068d;
+  background-color: #ff96c2;
+  padding: 20px 32px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+form {
+	max-width: 600px;
+	margin: 40px auto;
+	padding: 32px;
+	background-color: #ffe5ff;
+	border: 1px solid #ff93ed;
+	border-radius: 12px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin-bottom: 32px;
+}
+
+section h3 {
+	font-size: 1.1rem;
+	font-weight: bold;
+	border-bottom: 2px solid #333;
+	padding-bottom: 8px;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #d1068d;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+
+select:focus,
+textarea:focus {
+    width: 100%;
+    padding: 10px 14px;
+	outline: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+	border-color: #ff36ee;
+	background-color: #ffffff;
+	box-shadow: 0 0 0 3px rgba(197, 1, 148, 0.15);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #e6399e;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(207, 2, 156, 0.15);
+}
+
+select {
+	cursor: pointer; /* cambia el cursor a mano */
+}
+
+textarea {
+	resize: vertical; /* solo puede agrandarse en altura, no en ancho */
+}
+
+<div class="opcion-radio">
+	<input type="radio" id="chica" name="tamaño" value="chica">
+	<label for="chica">Chica (4 porciones)</label>
+</div>
+
+.opcion-radio,
+.opcion-checkbox {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+}
+
+button[type="submit"] {
+	width: 100%;
+	padding: 14px;
+	background-color: #ff34aa;
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-top: 8px;
+	}
+
+button[type="submit"]:hover {
+	background-color: #df1484;
+}
+
+
 body{
+    font-family: 'Times New Roman', Times, serif;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #d1068d;
     background-color: #ffc9de;
 }
 
-/*selector de clase*/
-.tipo-de-letra{
-    font-family:cursive;
-    font-size: 50px;
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: #888;
 }
 
-/*selector de id*/
-#titulo-principal{
-    color:blueviolet;
-}
 
-/**/
-.contenedor{
-    display: flex;
-    justify-content: center;
-}
