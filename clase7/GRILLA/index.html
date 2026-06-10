@@ -8,6 +8,24 @@
 </head>
 <body>
     <h1>Personajes de Sanrio</h1>
+
+    <div class="controles">
+        <label for="busqueda">Buscar por nombre: </label>
+        <input type="text" id="busqueda">
+        <label for="especie">Buscar por especie: </label>
+        <select id="especie">
+            <option value="">Todas las especies</option>
+            <option value="Gato">Gato</option>
+            <option value="Conejo">Conejo</option>
+            <option value="Perro">Perro</option>
+            <option value="Rana">Rana</option>
+            <option value="Pingüino">Pingüino</option>
+        </select>
+        <button id="ordenar">Ordenar por año (mayor a menor)</button>
+        <button id="reset"> Restablecer busqueda </button>
+    </div>
+
+    <p id="contador"></p>
     <div id="grilla" class="grilla"></div>
     <script src="script.js"></script>
 </body>

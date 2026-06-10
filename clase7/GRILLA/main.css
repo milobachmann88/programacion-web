@@ -2,10 +2,23 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
+    padding: 20px;
 }
 
 .card{
-    background-color: white;
+    background-color: rgb(255, 179, 224);
     padding: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, alpha);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.controles {
+    margin-bottom: 20px;
 }
